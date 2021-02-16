@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DataService } from './services/data.service';
+import {Todo} from './classes/todo';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-training';
+
+  constructor(private dataService: DataService) {
+  }
 }
+
+//adding comments for rebasing again 
